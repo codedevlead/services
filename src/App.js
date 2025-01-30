@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Plans from './sections/Plans';
 
 function App() {
   return (
@@ -18,7 +19,9 @@ function App() {
           Learn React
         </a>
       </header>
-      <header></header>
+      <header>
+        <Plans />
+      </header>
     </div>
   );
 }
