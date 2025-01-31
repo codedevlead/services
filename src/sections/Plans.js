@@ -5,7 +5,7 @@ import CustomPlanColumn from "../components/CustomPlanColumn";
 const Plans = () => {
     return (
         <section>
-            <div className="grid grid-cols-4 gap-8">
+            <div className="grid lg:grid-cols-4 grid-cols-1 gap-8">
                 {plans.map((el) => (
                     <PlanColumn data={el} />
                 ))}
