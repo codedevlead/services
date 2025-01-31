@@ -13,7 +13,7 @@ function App() {
       <header>
         <div className='py-8'>
           <h1 className='text-center text-5xl font-bold text-slate-600 mb-4'>Monthly Plans</h1>
-          <a href='/#discounts' className=' font-bold text-lg italic text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-pink-500'>See our discounts</a>
+          <a href='#discounts' className=' font-bold text-lg italic text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-pink-500'>See our discounts</a>
         </div>
       </header>
       <Plans />
