@@ -4,7 +4,7 @@ import Plans from './sections/Plans';
 function App() {
   return (
     <div
-      className='p-16 App'
+      className='md:px-16 py-16 px-8 App'
       style={{
         background: "rgb(240,240,245)",
         background: "radial-gradient(circle, rgba(240,240,245,1) 9%, rgba(220,233,236,1) 62%, rgba(227,213,241,0.999964951801033) 94%)"
