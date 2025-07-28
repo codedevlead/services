@@ -28,7 +28,7 @@ const TooltipContent = ({ data }: TooltipContent) => {
             duration: 0.2,
             ease: "easeInOut"
           }}
-          className="absolute w-[240px] bg-white z-10 right-[-240px] top-0 p-3 border border-[0.5px] rounded-lg border-slate-300"
+          className="absolute w-[240px] bg-white z-10 left-[-240px] top-0 p-3 border border-[0.5px] rounded-lg border-slate-300"
         >
           {data}
         </motion.div>
