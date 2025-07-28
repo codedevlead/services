@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Plans from "./components/Plans";
 import Link from "next/link";
 

@@ -11,7 +11,7 @@ const CustomPlanColumn = () => {
     ) => {
         const checked = e.target.checked;
 
-        let newTotal = checked ? total + value : total - value;
+        const newTotal = checked ? total + value : total - value;
 
         newTotal <= 1250 ? setTotal(1250) : setTotal(newTotal);
     }
