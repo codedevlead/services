@@ -43,16 +43,16 @@ const PlanColumn = ({ data }: PlanColumnType) => {
                 const includedInPlan = item.planIncluded.includes(data.id)
                 return (
                   <motion.div
-                    className="flex flex-start items-start" key={index2}
+                    className="flex flex-start items-start mb-2" key={index2}
                   >
+                    {data.id === "3" && (
+                      <TooltipContent data={item.info} />
+                    )}
                     {includedInPlan
                       ? <FaCheck className="pr-2 mt-0" size={20} color="#00d492" />
                       : <IoCloseSharp className="pr-2 mt-0" size={20} color="#fb2c36" />
                     }
-                    <p className={`lg:text-xs text-left mb-2 ${!includedInPlan ? 'line-through font-light text-gray-500' : ''}`}>{item.name}</p>
-                    {data.id === "3" && (
-                      <TooltipContent data={item.info} />
-                    )}
+                    <p className={`lg:text-xs text-left mb-0 ${!includedInPlan ? 'line-through font-light text-gray-500' : ''}`}>{item.name}</p>
                   </motion.div>
                 )
               })}

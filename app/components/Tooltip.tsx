@@ -12,10 +12,10 @@ const TooltipContent = ({ data }: TooltipContent) => {
   const [open, setOpen] = useState<boolean>(false);
 
   return (
-    <div className="relative pl-2 mb-2">
+    <div className="relative pr-2">
       <FaInfoCircle
-        size={12}
-        className="cursor-pointer"
+        size={18}
+        className="cursor-pointer mt-0"
         color="#ad46ff"
         onMouseEnter={() => setOpen(true)}
         onMouseLeave={() => setOpen(false)}
@@ -28,7 +28,9 @@ const TooltipContent = ({ data }: TooltipContent) => {
             duration: 0.2,
             ease: "easeInOut"
           }}
-          className="absolute w-[240px] bg-white z-10 left-[-240px] top-0 p-3 border border-[0.5px] rounded-lg border-slate-300"
+          onMouseEnter={() => setOpen(true)}
+          onMouseLeave={() => setOpen(false)}
+          className="absolute w-[240px] bg-white z-10 right-[-220px] top-0 p-3 border border-[0.5px] rounded-lg border-slate-300"
         >
           {data}
         </motion.div>
