@@ -27,7 +27,7 @@ const CustomPlanColumn = () => {
                     return (
                         <React.Fragment key={index}>
                             <div className="border-b-2 border-solid py-2 mb-3">
-                                <h3 className="text-left lg:text-md text-xl">{el.name}</h3>
+                                <h3 className="text-left lg:text-md text-xl text-stone-900">{el.name}</h3>
                             </div>
                             {el.items.map((item, index2) => {
                                 return (
@@ -39,7 +39,7 @@ const CustomPlanColumn = () => {
                                           className="mb-2 mr-3"
                                           onChange={(e) => selectService(e, item.value)}
                                         />
-                                        <p className={`lg:text-xs text-left mb-2`}>{item.name}</p>
+                                        <p className={`lg:text-xs text-left mb-2 text-stone-900`}>{item.name}</p>
                                     </div>
                                 )
                             })}
