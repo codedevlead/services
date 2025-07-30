@@ -37,7 +37,7 @@ const PlanColumn = ({ data }: PlanColumnType) => {
               <motion.div
                 className="border-b-2 border-solid py-2 mb-3"
               >
-                <h3 className="text-left lg:text-md text-xl">{el.name}</h3>
+                <h3 className="text-left lg:text-md text-xl text-stone-900">{el.name}</h3>
               </motion.div>
               {el.items.map((item, index2) => {
                 const includedInPlan = item.planIncluded.includes(data.id)
@@ -52,7 +52,7 @@ const PlanColumn = ({ data }: PlanColumnType) => {
                       ? <FaCheck className="pr-2 mt-0" size={20} color="#00d492" />
                       : <IoCloseSharp className="pr-2 mt-0" size={20} color="#fb2c36" />
                     }
-                    <p className={`lg:text-xs text-left mb-0 ${!includedInPlan ? 'line-through font-light text-gray-500' : ''}`}>{item.name}</p>
+                    <p className={`lg:text-xs text-left mb-0 ${!includedInPlan ? 'line-through font-light text-gray-500' : 'text-stone-900'}`}>{item.name}</p>
                   </motion.div>
                 )
               })}
